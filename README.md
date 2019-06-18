@@ -10,20 +10,21 @@ It can perform in two ways:
 - As a one-off tool
 - As a long-running daemon process :clock10:
 
-Scanning the whole range of ports is also an option (will be included as a flag in arguments). Obviously this will take a lot longer so do it at your own leisure.
+Scanning the whole range of ports is also an option (will be included as a flag in arguments).  
+Obviously this will take a lot longer so do it at your own leisure.
 
-## One-off
+### One-off
 
 Will provide estimation of the process (can take awhile especially with port-scanning turned on)
 
-## Daemon
+### Daemon
 
 As a daemon it will run once per day and store the results
 - File cleanup will be done by removing duplicates if the direcotry size is too large
 - It will compare the current state versus previous state
 - If any new changes occur, it can then alert you via Webhook (Slack) or Twilio SMS
 
-# Installation 
+## Installation 
 
 ```
 pip install -r requirements.txt
